@@ -1,5 +1,7 @@
 ﻿using BusinessLogic_DVLD;
 using DVLDProject.Global_Classes;
+using DVLDProject.Licenses;
+using DVLDProject.Licenses.International_Licenses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +23,7 @@ namespace DVLDProject.Applications.InternationalLicense
         {
             InitializeComponent();
         }
+
 
         private void gpApplicationInfo_Enter(object sender, EventArgs e)
         {
@@ -124,6 +127,18 @@ namespace DVLDProject.Applications.InternationalLicense
             }
 
             btnIssueLicense.Enabled = true;
+        }
+
+        private void llShowLicenseHistory_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory(ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.DriverInfo.PersonID);
+            frm.ShowDialog();
+        }
+
+        private void llShowLicenseInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmShowInternationalLicenseInfo frm = new frmShowInternationalLicenseInfo(ctrlDriverLicenseInfoWithFilter1.LicenseID);
+            frm.ShowDialog();
         }
     }
 }

@@ -87,6 +87,7 @@ namespace DVLDProject
                 txtUserName.Text = UserName;
                 chkRemeber.Checked = true;
                 btnLogin.Enabled = true;
+                btnLogin.Focus();
             }
             else
             {

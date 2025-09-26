@@ -115,5 +115,10 @@ namespace DVLDProject.Licenses.LocalLicense.Controls
                 errorProvider1.SetError(txtLicenseID, null);
             }
         }
+
+        private void ctrlDriverLicenseInfoWithFilter_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

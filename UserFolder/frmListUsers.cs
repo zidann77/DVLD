@@ -252,5 +252,10 @@ namespace DVLDProject.UserFolder
         {
 
         }
+
+        private void lbRecords_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using BusinessLogic_DVLD;
+using DVLDProject.Licenses;
+using DVLDProject.Licenses.International_Licenses;
 using DVLDProject.PersonFolder;
 using System;
 using System.Collections.Generic;
@@ -81,7 +83,7 @@ namespace DVLDProject.Applications.InternationalLicense
                 dgvInternationalLicenses.Columns[4].Width = 180;
 
                 dgvInternationalLicenses.Columns[5].HeaderText = "Expiration Date";
-                dgvInternationalLicenses.Columns[5].Width = 180;
+                dgvInternationalLicenses.Columns[5].Width = 200;
 
                 dgvInternationalLicenses.Columns[6].HeaderText = "Is Active";
                 dgvInternationalLicenses.Columns[6].Width = 120;
@@ -229,7 +231,20 @@ namespace DVLDProject.Applications.InternationalLicense
 
         private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            frmShowInternationalLicenseInfo frm = new frmShowInternationalLicenseInfo((int)dgvInternationalLicenses.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+        }
+
+        private void showPersonLicenseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int PersonID = clsDriver.FindByDriverID((int)dgvInternationalLicenses.CurrentRow.Cells[2].Value).PersonID;
+            frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory(PersonID);
+            frm.ShowDialog();
+        }
+
+        private void dgvInternationalLicenses_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using BusinessLogic_DVLD;
 using DVLDProject.Applications.InternationalLicense;
+using DVLDProject.Licenses;
 using DVLDProject.PersonFolder;
 using System;
 using System.Collections.Generic;
@@ -42,13 +43,13 @@ namespace DVLDProject.Drivers
                 dgvDrivers.Columns[2].Width = 140;
 
                 dgvDrivers.Columns[3].HeaderText = "Full Name";
-                dgvDrivers.Columns[3].Width = 320;
+                dgvDrivers.Columns[3].Width = 350;
 
                 dgvDrivers.Columns[4].HeaderText = "Date";
-                dgvDrivers.Columns[4].Width = 170;
+                dgvDrivers.Columns[4].Width = 180;
 
                 dgvDrivers.Columns[5].HeaderText = "Active Licenses";
-                dgvDrivers.Columns[5].Width = 150;
+                dgvDrivers.Columns[5].Width = 145;
             }
         }
         private void ListDrivers_Load(object sender, EventArgs e)
@@ -144,7 +145,9 @@ namespace DVLDProject.Drivers
 
         private void showPersonLicenseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not implemented yet.");
+            int PersonID = clsDriver.FindByDriverID((int)dgvDrivers.CurrentRow.Cells[0].Value).PersonID;
+            frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory(PersonID);
+            frm.ShowDialog();
         }
 
         private void _DisableFormWhileRefresh()

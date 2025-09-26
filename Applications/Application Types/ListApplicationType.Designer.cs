@@ -32,14 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListApplicationType));
             this.label1 = new System.Windows.Forms.Label();
             this.dgvApplicationTypes = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lbRecordes = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApplicationTypes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +47,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(150, 224);
+            this.label1.Location = new System.Drawing.Point(136, 226);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(443, 39);
             this.label1.TabIndex = 1;
@@ -59,44 +59,13 @@
             this.dgvApplicationTypes.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvApplicationTypes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvApplicationTypes.ContextMenuStrip = this.contextMenuStrip1;
+            this.dgvApplicationTypes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvApplicationTypes.GridColor = System.Drawing.SystemColors.Control;
             this.dgvApplicationTypes.Location = new System.Drawing.Point(12, 294);
             this.dgvApplicationTypes.Name = "dgvApplicationTypes";
             this.dgvApplicationTypes.ReadOnly = true;
             this.dgvApplicationTypes.Size = new System.Drawing.Size(679, 256);
             this.dgvApplicationTypes.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(233, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(263, 209);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(7, 564);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 29);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Recordes : ";
-            // 
-            // lbRecordes
-            // 
-            this.lbRecordes.AutoSize = true;
-            this.lbRecordes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRecordes.ForeColor = System.Drawing.Color.Black;
-            this.lbRecordes.Location = new System.Drawing.Point(147, 564);
-            this.lbRecordes.Name = "lbRecordes";
-            this.lbRecordes.Size = new System.Drawing.Size(26, 29);
-            this.lbRecordes.TabIndex = 4;
-            this.lbRecordes.Text = "7";
             // 
             // contextMenuStrip1
             // 
@@ -115,6 +84,38 @@
             this.editToolStripMenuItem.Text = "&Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(221, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(263, 209);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(7, 564);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(116, 29);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Records :";
+            // 
+            // lbRecordes
+            // 
+            this.lbRecordes.AutoSize = true;
+            this.lbRecordes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRecordes.ForeColor = System.Drawing.Color.Black;
+            this.lbRecordes.Location = new System.Drawing.Point(129, 564);
+            this.lbRecordes.Name = "lbRecordes";
+            this.lbRecordes.Size = new System.Drawing.Size(26, 29);
+            this.lbRecordes.TabIndex = 4;
+            this.lbRecordes.Text = "0";
+            // 
             // ListApplicationType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,8 +132,8 @@
             this.Text = "ListApplicationType";
             this.Load += new System.EventHandler(this.ListApplicationType_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvApplicationTypes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

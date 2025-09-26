@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using DVLDProject.Global_Classes;
 
 
 namespace DVLDProject.PersonFolder.Controls
@@ -78,7 +79,7 @@ namespace DVLDProject.PersonFolder.Controls
             label13.Text=_Person.NationalNo;
             label15.Text = _Person.Gendor == 0 ? "Male" : "FeMale";
             label14.Text = _Person.Email;
-            label11.Text = _Person.DateOfBirth.ToString();
+            label11.Text = clsFormat.DateToShort(_Person.DateOfBirth);
             label16.Text = _Person.Phone;
             label17.Text = _Person.Address;
             label18.Text = _Person.Country.CountryName;

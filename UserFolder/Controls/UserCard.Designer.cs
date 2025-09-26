@@ -124,6 +124,7 @@
             this.personCard1.Name = "personCard1";
             this.personCard1.Size = new System.Drawing.Size(759, 280);
             this.personCard1.TabIndex = 2;
+            this.personCard1.Load += new System.EventHandler(this.personCard1_Load);
             // 
             // UserCard
             // 

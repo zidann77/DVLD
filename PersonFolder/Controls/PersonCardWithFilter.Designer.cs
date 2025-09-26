@@ -49,7 +49,7 @@
             this.FilterBox.Controls.Add(this.textBox1);
             this.FilterBox.Controls.Add(this.comboBox1);
             this.FilterBox.Controls.Add(this.label1);
-            this.FilterBox.Location = new System.Drawing.Point(9, 13);
+            this.FilterBox.Location = new System.Drawing.Point(3, 3);
             this.FilterBox.Name = "FilterBox";
             this.FilterBox.Size = new System.Drawing.Size(759, 71);
             this.FilterBox.TabIndex = 1;
@@ -126,7 +126,7 @@
             // personCard1
             // 
             this.personCard1.BackColor = System.Drawing.SystemColors.Control;
-            this.personCard1.Location = new System.Drawing.Point(9, 95);
+            this.personCard1.Location = new System.Drawing.Point(3, 80);
             this.personCard1.Name = "personCard1";
             this.personCard1.Size = new System.Drawing.Size(759, 280);
             this.personCard1.TabIndex = 2;
@@ -138,7 +138,7 @@
             this.Controls.Add(this.personCard1);
             this.Controls.Add(this.FilterBox);
             this.Name = "PersonCardWithFilter";
-            this.Size = new System.Drawing.Size(779, 378);
+            this.Size = new System.Drawing.Size(767, 359);
             this.Load += new System.EventHandler(this.PersonCardWithFilter_Load);
             this.FilterBox.ResumeLayout(false);
             this.FilterBox.PerformLayout();

@@ -55,7 +55,7 @@
             // 
             this.lblRecordsCount.AutoSize = true;
             this.lblRecordsCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecordsCount.Location = new System.Drawing.Point(126, 617);
+            this.lblRecordsCount.Location = new System.Drawing.Point(109, 617);
             this.lblRecordsCount.Name = "lblRecordsCount";
             this.lblRecordsCount.Size = new System.Drawing.Size(30, 22);
             this.lblRecordsCount.TabIndex = 124;
@@ -65,11 +65,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 617);
+            this.label2.Location = new System.Drawing.Point(13, 617);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 22);
+            this.label2.Size = new System.Drawing.Size(96, 22);
             this.label2.TabIndex = 123;
-            this.label2.Text = "Records:";
+            this.label2.Text = "Records :";
             // 
             // dgvDrivers
             // 
@@ -79,6 +79,7 @@
             this.dgvDrivers.BackgroundColor = System.Drawing.Color.White;
             this.dgvDrivers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDrivers.ContextMenuStrip = this.cmsDrivers;
+            this.dgvDrivers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvDrivers.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvDrivers.Location = new System.Drawing.Point(17, 348);
             this.dgvDrivers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -94,7 +95,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDrivers.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDrivers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDrivers.Size = new System.Drawing.Size(1097, 248);
+            this.dgvDrivers.Size = new System.Drawing.Size(1097, 264);
             this.dgvDrivers.TabIndex = 122;
             this.dgvDrivers.TabStop = false;
             // 
@@ -180,7 +181,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 311);
+            this.label1.Location = new System.Drawing.Point(13, 311);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 22);
             this.label1.TabIndex = 127;
@@ -212,14 +213,14 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.SpringGreen;
+            this.button1.BackColor = System.Drawing.Color.SeaGreen;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(1007, 243);
+            this.button1.Location = new System.Drawing.Point(1022, 260);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 97);
+            this.button1.Size = new System.Drawing.Size(92, 80);
             this.button1.TabIndex = 132;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.UseWaitCursor = true;

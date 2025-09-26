@@ -78,5 +78,10 @@ namespace DVLDProject.UserFolder
         {
 
         }
+
+        private void personCard1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

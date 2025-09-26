@@ -1,4 +1,6 @@
 ﻿using BusinessLogic_DVLD;
+using DVLDProject.Licenses.LocalLicense;
+using DVLDProject.PersonFolder;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,7 +47,7 @@ namespace DVLDProject.Applications.Local_Driving_License
 
         public void LoadData(int ApplicationId)
         {
-            _Application = clsLocalDrivingLicenseApplication.FindByApplicationID(ApplicationId);
+            _Application = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(ApplicationId);
 
             if (_Application == null)
             {
@@ -86,6 +88,16 @@ namespace DVLDProject.Applications.Local_Driving_License
         }
 
         private void ctrlApplicationBasicInfo1_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void llShowLicenceInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmShowLicenseInfo frm  = new frmShowLicenseInfo(LicenseID);
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

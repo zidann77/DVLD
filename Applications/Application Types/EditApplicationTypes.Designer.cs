@@ -102,9 +102,9 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(117, 237);
+            this.btnSave.Location = new System.Drawing.Point(100, 237);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(105, 33);
+            this.btnSave.Size = new System.Drawing.Size(119, 33);
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -112,9 +112,9 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(238, 237);
+            this.btnClose.Location = new System.Drawing.Point(273, 237);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(105, 33);
+            this.btnClose.Size = new System.Drawing.Size(119, 33);
             this.btnClose.TabIndex = 7;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -124,7 +124,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label5.Location = new System.Drawing.Point(54, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(338, 39);

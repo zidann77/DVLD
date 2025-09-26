@@ -47,6 +47,7 @@
             this.sendPhoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbRecoreds = new System.Windows.Forms.Label();
             this.lbCountRecordes = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -57,7 +58,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(582, 204);
+            this.label1.Location = new System.Drawing.Point(559, 204);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(265, 39);
             this.label1.TabIndex = 1;
@@ -68,7 +69,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(10, 275);
+            this.label2.Location = new System.Drawing.Point(15, 275);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 25);
             this.label2.TabIndex = 2;
@@ -92,7 +93,7 @@
             "Gendor",
             "Phone",
             "Email"});
-            this.cbFilter.Location = new System.Drawing.Point(108, 272);
+            this.cbFilter.Location = new System.Drawing.Point(113, 272);
             this.cbFilter.Name = "cbFilter";
             this.cbFilter.Size = new System.Drawing.Size(213, 28);
             this.cbFilter.TabIndex = 3;
@@ -101,7 +102,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(339, 273);
+            this.textBox1.Location = new System.Drawing.Point(344, 273);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(213, 27);
             this.textBox1.TabIndex = 4;
@@ -111,7 +112,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(606, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(583, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(220, 189);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -130,7 +131,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 334);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1346, 301);
+            this.dataGridView1.Size = new System.Drawing.Size(1346, 322);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
@@ -219,7 +220,7 @@
             this.lbRecoreds.AutoSize = true;
             this.lbRecoreds.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRecoreds.ForeColor = System.Drawing.Color.Black;
-            this.lbRecoreds.Location = new System.Drawing.Point(7, 649);
+            this.lbRecoreds.Location = new System.Drawing.Point(7, 659);
             this.lbRecoreds.Name = "lbRecoreds";
             this.lbRecoreds.Size = new System.Drawing.Size(95, 25);
             this.lbRecoreds.TabIndex = 6;
@@ -230,17 +231,33 @@
             this.lbCountRecordes.AutoSize = true;
             this.lbCountRecordes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCountRecordes.ForeColor = System.Drawing.Color.Black;
-            this.lbCountRecordes.Location = new System.Drawing.Point(108, 649);
+            this.lbCountRecordes.Location = new System.Drawing.Point(108, 659);
             this.lbCountRecordes.Name = "lbCountRecordes";
             this.lbCountRecordes.Size = new System.Drawing.Size(45, 25);
             this.lbCountRecordes.TabIndex = 7;
             this.lbCountRecordes.Text = "???";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SeaGreen;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(1270, 249);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 75);
+            this.button1.TabIndex = 174;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.UseWaitCursor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmListPeople
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 740);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbCountRecordes);
             this.Controls.Add(this.lbRecoreds);
             this.Controls.Add(this.dataGridView1);
@@ -282,5 +299,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem sendEmailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sendPhoneToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }

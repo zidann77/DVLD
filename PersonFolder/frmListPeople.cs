@@ -252,6 +252,31 @@ namespace DVLDProject.PersonFolder
 
         }
 
-      
+
+        private void _DisableFormWhileRefresh()
+        {
+            this.Enabled = false;
+
+            Application.DoEvents(); // Allow UI to update
+
+            Cursor.Current = Cursors.WaitCursor;
+
+        }
+
+        private void _EnableFormAfterRefresh()
+        {
+            this.Enabled = true;
+
+            Application.DoEvents(); // Allow UI to update
+
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            _DisableFormWhileRefresh();
+            RefreshData();
+            _EnableFormAfterRefresh();
+        }
     }
 }

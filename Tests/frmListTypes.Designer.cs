@@ -48,6 +48,7 @@
             this.dgvTestTypes.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvTestTypes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTestTypes.ContextMenuStrip = this.contextMenuStrip1;
+            this.dgvTestTypes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvTestTypes.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvTestTypes.Location = new System.Drawing.Point(11, 314);
             this.dgvTestTypes.Name = "dgvTestTypes";

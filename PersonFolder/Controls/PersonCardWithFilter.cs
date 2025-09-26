@@ -50,7 +50,7 @@ namespace DVLDProject.PersonFolder.Controls
             set 
             {
                 _EnableFilter = value;
-                btnAddNew.Visible = EnableFilter;
+                FilterBox.Enabled = _EnableFilter;
             }
         }
 

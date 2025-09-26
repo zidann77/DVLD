@@ -154,11 +154,11 @@
             // 
             this.chkRemeber.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.chkRemeber.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.chkRemeber.Font = new System.Drawing.Font("Sans Serif Collection", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRemeber.Font = new System.Drawing.Font("Sans Serif Collection", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkRemeber.ForeColor = System.Drawing.Color.Teal;
             this.chkRemeber.Location = new System.Drawing.Point(158, 270);
             this.chkRemeber.Name = "chkRemeber";
-            this.chkRemeber.Size = new System.Drawing.Size(185, 55);
+            this.chkRemeber.Size = new System.Drawing.Size(186, 58);
             this.chkRemeber.TabIndex = 3;
             this.chkRemeber.Text = "Remeber Me";
             this.chkRemeber.TextAlign = System.Drawing.ContentAlignment.TopCenter;

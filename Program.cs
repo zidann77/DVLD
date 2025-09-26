@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DVLDProject.Applications.Renew_Local_License;
+using DVLDProject.Licenses;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,6 +19,8 @@ namespace DVLDProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmloginForm());
+           // Application.Run(new frmRenewLocalDrivingLicenseApplication());
+
         }
     }
 }

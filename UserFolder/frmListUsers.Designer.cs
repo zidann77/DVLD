@@ -59,7 +59,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(386, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(390, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(220, 184);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -71,7 +71,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(370, 215);
+            this.label1.Location = new System.Drawing.Point(373, 199);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(250, 39);
             this.label1.TabIndex = 1;
@@ -85,11 +85,12 @@
             this.dgvUsers.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsers.ContextMenuStrip = this.contextMenuStrip1;
+            this.dgvUsers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvUsers.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvUsers.Location = new System.Drawing.Point(37, 334);
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.ReadOnly = true;
-            this.dgvUsers.Size = new System.Drawing.Size(895, 261);
+            this.dgvUsers.Size = new System.Drawing.Size(895, 269);
             this.dgvUsers.TabIndex = 2;
             this.dgvUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -183,33 +184,34 @@
             // lbRecords
             // 
             this.lbRecords.AutoSize = true;
-            this.lbRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRecords.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbRecords.Location = new System.Drawing.Point(158, 598);
+            this.lbRecords.Location = new System.Drawing.Point(128, 606);
             this.lbRecords.Name = "lbRecords";
-            this.lbRecords.Size = new System.Drawing.Size(27, 29);
+            this.lbRecords.Size = new System.Drawing.Size(23, 25);
             this.lbRecords.TabIndex = 3;
             this.lbRecords.Text = "7";
+            this.lbRecords.Click += new System.EventHandler(this.lbRecords_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(32, 598);
+            this.label3.Location = new System.Drawing.Point(32, 606);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 29);
+            this.label3.Size = new System.Drawing.Size(95, 25);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Records";
+            this.label3.Text = "Records :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(31, 280);
+            this.label2.Location = new System.Drawing.Point(33, 288);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 29);
+            this.label2.Size = new System.Drawing.Size(94, 29);
             this.label2.TabIndex = 5;
             this.label2.Text = "Find By";
             // 
@@ -226,7 +228,7 @@
             "PersonID",
             "UserID",
             "UserName"});
-            this.cbFilter.Location = new System.Drawing.Point(147, 277);
+            this.cbFilter.Location = new System.Drawing.Point(133, 284);
             this.cbFilter.Name = "cbFilter";
             this.cbFilter.Size = new System.Drawing.Size(201, 37);
             this.cbFilter.Sorted = true;
@@ -243,7 +245,7 @@
             "Yes",
             "No",
             "ALL"});
-            this.cbActiveChoices.Location = new System.Drawing.Point(405, 275);
+            this.cbActiveChoices.Location = new System.Drawing.Point(349, 285);
             this.cbActiveChoices.Name = "cbActiveChoices";
             this.cbActiveChoices.Size = new System.Drawing.Size(121, 37);
             this.cbActiveChoices.TabIndex = 7;
@@ -253,7 +255,7 @@
             // txtFilter
             // 
             this.txtFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilter.Location = new System.Drawing.Point(405, 277);
+            this.txtFilter.Location = new System.Drawing.Point(349, 287);
             this.txtFilter.Name = "txtFilter";
             this.txtFilter.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtFilter.Size = new System.Drawing.Size(201, 35);
@@ -263,27 +265,27 @@
             // 
             // btnAddUser
             // 
-            this.btnAddUser.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnAddUser.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddUser.ForeColor = System.Drawing.Color.Cyan;
             this.btnAddUser.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUser.Image")));
-            this.btnAddUser.Location = new System.Drawing.Point(831, 238);
+            this.btnAddUser.Location = new System.Drawing.Point(845, 251);
             this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(101, 80);
+            this.btnAddUser.Size = new System.Drawing.Size(87, 71);
             this.btnAddUser.TabIndex = 10;
             this.btnAddUser.UseVisualStyleBackColor = false;
             this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // btnRefresh
             // 
-            this.btnRefresh.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnRefresh.BackColor = System.Drawing.Color.SeaGreen;
             this.btnRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.BackgroundImage")));
             this.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnRefresh.Location = new System.Drawing.Point(724, 238);
+            this.btnRefresh.Location = new System.Drawing.Point(752, 251);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(101, 80);
+            this.btnRefresh.Size = new System.Drawing.Size(87, 71);
             this.btnRefresh.TabIndex = 11;
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
@@ -293,7 +295,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(979, 640);
+            this.ClientSize = new System.Drawing.Size(969, 640);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnAddUser);
             this.Controls.Add(this.txtFilter);
