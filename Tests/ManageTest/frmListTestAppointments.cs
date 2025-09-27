@@ -151,12 +151,14 @@ namespace DVLDProject.Tests.ManageTest
             if ((bool)dgvLicenseTestAppointments.CurrentRow.Cells[3].Value)
             {
                 editToolStripMenuItem.Enabled = false;
+                takeTestToolStripMenuItem.Enabled = false;
             }
 
-            else 
-
-            editToolStripMenuItem.Enabled= true;
-
+            else
+            {
+                editToolStripMenuItem.Enabled = true;
+                takeTestToolStripMenuItem.Enabled = true;
+            }
         }
     }
 }

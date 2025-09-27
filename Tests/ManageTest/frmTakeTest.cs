@@ -31,6 +31,7 @@ namespace DVLDProject.Tests.ManageTest
 
         private void frmTakeTest_Load(object sender, EventArgs e)
         {
+           
             ctrlScheduledTest1.TestTypeID = TestType;
             ctrlScheduledTest1.LoadInfo(TestAppointment);
 
@@ -42,7 +43,7 @@ namespace DVLDProject.Tests.ManageTest
             int TestID = ctrlScheduledTest1.TestID;
 
             if (TestID != -1)
-            {
+            { 
 
                 _Test = clsTest.Find(TestID);
 
@@ -52,10 +53,11 @@ namespace DVLDProject.Tests.ManageTest
                     rbFail.Checked = true;
 
                 txtNotes.Text = _Test.Notes;
-
+                txtNotes.Enabled = false;
                 lblUserMessage.Visible = true;
                 rbFail.Enabled = false;
                 rbPass.Enabled = false;
+
             }
 
             else

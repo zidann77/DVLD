@@ -164,7 +164,7 @@
             // 
             this.lblRetakeAppFees.AutoSize = true;
             this.lblRetakeAppFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRetakeAppFees.Location = new System.Drawing.Point(180, 40);
+            this.lblRetakeAppFees.Location = new System.Drawing.Point(446, 82);
             this.lblRetakeAppFees.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblRetakeAppFees.Name = "lblRetakeAppFees";
             this.lblRetakeAppFees.Size = new System.Drawing.Size(49, 20);
@@ -175,7 +175,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(21, 40);
+            this.label7.Location = new System.Drawing.Point(287, 82);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(109, 20);
@@ -185,7 +185,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(140, 40);
+            this.pictureBox6.Location = new System.Drawing.Point(406, 82);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 26);
@@ -196,7 +196,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(140, 76);
+            this.pictureBox5.Location = new System.Drawing.Point(142, 46);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(31, 26);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -207,7 +207,7 @@
             // 
             this.lblRetakeTestAppID.AutoSize = true;
             this.lblRetakeTestAppID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRetakeTestAppID.Location = new System.Drawing.Point(180, 76);
+            this.lblRetakeTestAppID.Location = new System.Drawing.Point(182, 46);
             this.lblRetakeTestAppID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblRetakeTestAppID.Name = "lblRetakeTestAppID";
             this.lblRetakeTestAppID.Size = new System.Drawing.Size(39, 20);
@@ -218,7 +218,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 76);
+            this.label4.Location = new System.Drawing.Point(9, 46);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 20);

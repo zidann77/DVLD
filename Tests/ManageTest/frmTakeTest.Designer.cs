@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlScheduledTest1 = new DVLDProject.Tests.Controls.ctrlScheduledTest();
             this.lblUserMessage = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtNotes = new System.Windows.Forms.TextBox();
@@ -40,18 +39,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.ctrlScheduledTest1 = new DVLDProject.Tests.Controls.ctrlScheduledTest();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ctrlScheduledTest1
-            // 
-            this.ctrlScheduledTest1.Location = new System.Drawing.Point(12, 12);
-            this.ctrlScheduledTest1.Name = "ctrlScheduledTest1";
-            this.ctrlScheduledTest1.Size = new System.Drawing.Size(583, 554);
-            this.ctrlScheduledTest1.TabIndex = 0;
-            this.ctrlScheduledTest1.Load += new System.EventHandler(this.ctrlScheduledTest1_Load);
             // 
             // lblUserMessage
             // 
@@ -186,6 +178,14 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 201;
             this.pictureBox4.TabStop = false;
+            // 
+            // ctrlScheduledTest1
+            // 
+            this.ctrlScheduledTest1.Location = new System.Drawing.Point(12, 12);
+            this.ctrlScheduledTest1.Name = "ctrlScheduledTest1";
+            this.ctrlScheduledTest1.Size = new System.Drawing.Size(583, 554);
+            this.ctrlScheduledTest1.TabIndex = 0;
+            this.ctrlScheduledTest1.Load += new System.EventHandler(this.ctrlScheduledTest1_Load);
             // 
             // frmTakeTest
             // 
