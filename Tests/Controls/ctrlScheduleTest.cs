@@ -99,12 +99,19 @@ namespace DVLDProject.Tests.Controls
                     CurrentMode = enMode.Update;
                 }
 
-                else if (_TestAppointment != null && _TestAppointment.AppointmentDate <= DateTime.Now)
+                else if (_TestAppointment != null && _TestAppointment.AppointmentDate < DateTime.Now)
                 {
                     MessageBox.Show("The applicant has a previous appointment that is already due or has passed.",
                                     "Past Appointment",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
+                    MessageBox.Show("The Application Now is Retake Test.",
+                                    "Past Appointment",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
+
+                    _TestAppointment.IsLocked = true;
+                    _TestAppointment.Save();    
 
                     CurrentMode = enMode.RetakeTest;
                     SetRetakeInfo();

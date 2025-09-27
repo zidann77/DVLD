@@ -58,7 +58,7 @@
             this.lblUserMessage.AutoSize = true;
             this.lblUserMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserMessage.ForeColor = System.Drawing.Color.Red;
-            this.lblUserMessage.Location = new System.Drawing.Point(639, 287);
+            this.lblUserMessage.Location = new System.Drawing.Point(684, 287);
             this.lblUserMessage.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblUserMessage.Name = "lblUserMessage";
             this.lblUserMessage.Size = new System.Drawing.Size(248, 18);
@@ -86,6 +86,7 @@
             // 
             // txtNotes
             // 
+            this.txtNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNotes.Location = new System.Drawing.Point(606, 374);
             this.txtNotes.Multiline = true;
             this.txtNotes.Name = "txtNotes";
