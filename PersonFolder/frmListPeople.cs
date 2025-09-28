@@ -28,7 +28,7 @@ namespace DVLDProject.PersonFolder
             Table1 = clsPerson.GetAllPeople();
             SubTable = Table1.DefaultView.ToTable(false, "PersonID", "NationalNo",
           "FirstName", "SecondName", "ThirdName", "LastName",
-          "GendorCaption", "DateOfBirth", "CountryName",
+          "Gendor", "DateOfBirth", "CountryName",
           "Phone", "Email");
 
             dataGridView1.DataSource = SubTable;
@@ -102,7 +102,7 @@ namespace DVLDProject.PersonFolder
                 return;
             }
 
-            else if(selectedFilter == "PersonID")
+            else if(selectedFilter == "PersonID" || selectedFilter == "Gendor")
             {
                 if (int.TryParse(textBox1.Text, out int value))
                 {
@@ -120,7 +120,7 @@ namespace DVLDProject.PersonFolder
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (cbFilter.SelectedItem.ToString() == "Person ID")
+            if (cbFilter.SelectedItem.ToString() == "Person ID" || cbFilter.SelectedItem.ToString() == "Gendor")
                 e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
             else
                 return;
@@ -277,6 +277,15 @@ namespace DVLDProject.PersonFolder
             _DisableFormWhileRefresh();
             RefreshData();
             _EnableFormAfterRefresh();
+        }
+
+        private void textBox1_Validating(object sender, CancelEventArgs e)
+        {   //{
+        //    string selectedFilter = cbFilter.SelectedItem?.ToString();
+        //    if (selectedFilter == "Gendor " || selectedFilter == "Phone")
+        //    {
+              
+        //    }
         }
     }
 }
