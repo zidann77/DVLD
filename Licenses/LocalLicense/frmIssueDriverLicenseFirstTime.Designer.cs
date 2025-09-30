@@ -70,7 +70,7 @@
             this.btnIssueLicense.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIssueLicense.Image = global::DVLDProject.Properties.Resources.IssueDrivingLicense_32;
             this.btnIssueLicense.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIssueLicense.Location = new System.Drawing.Point(382, 497);
+            this.btnIssueLicense.Location = new System.Drawing.Point(390, 497);
             this.btnIssueLicense.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnIssueLicense.Name = "btnIssueLicense";
             this.btnIssueLicense.Size = new System.Drawing.Size(126, 37);
@@ -100,6 +100,7 @@
             this.Controls.Add(this.txtNotes);
             this.Controls.Add(this.ctrlDrivingLicneseApplicationInfo1);
             this.Name = "frmIssueDriverLicenseFirstTime";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmIssueDriverLicenseFirstTime";
             this.Load += new System.EventHandler(this.frmIssueDriverLicenseFirstTime_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

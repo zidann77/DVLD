@@ -248,7 +248,8 @@ namespace DVLDProject.Applications.Local_Driving_License
         private void showLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int AppID = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value;
-            int LicenseID = clsLicense.Find(AppID).LicenseID;
+           
+            int LicenseID = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(AppID).GetActiveLicenseID();
 
             if (LicenseID == -1)
             {

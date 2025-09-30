@@ -115,7 +115,7 @@
             this.btnSave.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(852, 324);
+            this.btnSave.Location = new System.Drawing.Point(1020, 317);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(150, 53);
             this.btnSave.TabIndex = 7;
@@ -128,7 +128,7 @@
             this.btnClose.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(1020, 324);
+            this.btnClose.Location = new System.Drawing.Point(831, 317);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(150, 53);
             this.btnClose.TabIndex = 8;

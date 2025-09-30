@@ -232,51 +232,38 @@ namespace DVLDProject.PersonFolder
 
         private bool _HandlePersonImage()
         {
-
-            //this procedure will handle the person image,
-            //it will take care of deleting the old image from the folder
-            //in case the image changed. and it will rename the new image with guid and 
-            // place it in the images folder.
-
-
-
-
-            //_Person.ImagePath contains the old Image, we check if it changed then we copy the new image
-            if (_Person.ImagePath != PersonPicture.ImageLocation)
+            // Ensure the image was changed or added
+            if (PersonPicture.ImageLocation != null &&
+                (string.IsNullOrEmpty(_Person.ImagePath) || _Person.ImagePath != PersonPicture.ImageLocation))
             {
-                if (_Person.ImagePath != "")
+                // Delete old image if it exists
+                if (!string.IsNullOrEmpty(_Person.ImagePath))
                 {
-                    //first we delete the old image from the folder in case there is any.
-
                     try
                     {
                         File.Delete(_Person.ImagePath);
                     }
                     catch (IOException)
                     {
-                        // We could not delete the file.
-                        //log it later   
+                        // Log if needed
                     }
                 }
 
-                if (PersonPicture.ImageLocation != null)
+                // Copy new image
+                string SourceImageFile = PersonPicture.ImageLocation.ToString();
+
+                if (Util.CopyImageToProjectImagesFolder(ref SourceImageFile))
                 {
-                    //then we copy the new image to the image folder after we rename it
-                    string SourceImageFile = PersonPicture.ImageLocation.ToString();
-
-                    if (Util.CopyImageToProjectImagesFolder(ref SourceImageFile))
-                    {
-                        PersonPicture.ImageLocation = SourceImageFile;
-                        return true;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error Copying Image File", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return false;
-                    }
+                    PersonPicture.ImageLocation = SourceImageFile;
+                    return true;
                 }
-
+                else
+                {
+                    MessageBox.Show("Error Copying Image File", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
             }
+
             return true;
         }
 
