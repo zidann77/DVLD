@@ -173,6 +173,7 @@ namespace DVLDProject.Drivers
         private void button1_Click(object sender, EventArgs e)
         {
             _DisableFormWhileRefresh();
+            cbFilterBy.SelectedIndex= 0;
             RefreshTheForm();
             _EnableFormAfterRefresh();
         }

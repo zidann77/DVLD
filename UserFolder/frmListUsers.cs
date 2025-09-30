@@ -48,6 +48,9 @@ namespace DVLDProject.UserFolder
         {
             _DisableFormWhileRefresh();
 
+            cbFilter.SelectedItem = 0;
+
+
             UserTable = clsUser.GetAllUsers();
 
             dgvUsers.DataSource = UserTable;

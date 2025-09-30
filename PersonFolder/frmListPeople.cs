@@ -275,6 +275,7 @@ namespace DVLDProject.PersonFolder
         private void button1_Click(object sender, EventArgs e)
         {
             _DisableFormWhileRefresh();
+            cbFilter.SelectedIndex = 0;
             RefreshData();
             _EnableFormAfterRefresh();
         }
