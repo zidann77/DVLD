@@ -28,20 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlDrivingLicneseApplicationInfo1 = new DVLDProject.Applications.Local_Driving_License.ctrlDrivingLicneseApplicationInfo();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNotes = new System.Windows.Forms.TextBox();
             this.btnIssueLicense = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ctrlDrivingLicneseApplicationInfo1 = new DVLDProject.Applications.Local_Driving_License.ctrlDrivingLicneseApplicationInfo();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ctrlDrivingLicneseApplicationInfo1
-            // 
-            this.ctrlDrivingLicneseApplicationInfo1.Location = new System.Drawing.Point(12, 2);
-            this.ctrlDrivingLicneseApplicationInfo1.Name = "ctrlDrivingLicneseApplicationInfo1";
-            this.ctrlDrivingLicneseApplicationInfo1.Size = new System.Drawing.Size(878, 363);
-            this.ctrlDrivingLicneseApplicationInfo1.TabIndex = 0;
             // 
             // label1
             // 
@@ -70,10 +63,10 @@
             this.btnIssueLicense.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIssueLicense.Image = global::DVLDProject.Properties.Resources.IssueDrivingLicense_32;
             this.btnIssueLicense.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIssueLicense.Location = new System.Drawing.Point(390, 497);
+            this.btnIssueLicense.Location = new System.Drawing.Point(382, 497);
             this.btnIssueLicense.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnIssueLicense.Name = "btnIssueLicense";
-            this.btnIssueLicense.Size = new System.Drawing.Size(126, 37);
+            this.btnIssueLicense.Size = new System.Drawing.Size(163, 43);
             this.btnIssueLicense.TabIndex = 179;
             this.btnIssueLicense.Text = "Issue";
             this.btnIssueLicense.UseVisualStyleBackColor = false;
@@ -88,6 +81,13 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 178;
             this.pictureBox1.TabStop = false;
+            // 
+            // ctrlDrivingLicneseApplicationInfo1
+            // 
+            this.ctrlDrivingLicneseApplicationInfo1.Location = new System.Drawing.Point(12, 2);
+            this.ctrlDrivingLicneseApplicationInfo1.Name = "ctrlDrivingLicneseApplicationInfo1";
+            this.ctrlDrivingLicneseApplicationInfo1.Size = new System.Drawing.Size(878, 363);
+            this.ctrlDrivingLicneseApplicationInfo1.TabIndex = 0;
             // 
             // frmIssueDriverLicenseFirstTime
             // 

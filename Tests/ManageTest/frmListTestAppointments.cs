@@ -105,16 +105,16 @@ namespace DVLDProject.Tests.ManageTest
             if (dgvLicenseTestAppointments.RowCount > 0)
             {
                 dgvLicenseTestAppointments.Columns[0].HeaderText = "Appointment ID";
-                dgvLicenseTestAppointments.Columns[0].Width = 150;
+                dgvLicenseTestAppointments.Columns[0].Width = 200;
 
                 dgvLicenseTestAppointments.Columns[1].HeaderText = "Appointment Date";
-                dgvLicenseTestAppointments.Columns[1].Width = 200;
+                dgvLicenseTestAppointments.Columns[1].Width = 250;
 
                 dgvLicenseTestAppointments.Columns[2].HeaderText = "Paid Fees";
-                dgvLicenseTestAppointments.Columns[2].Width = 150;
+                dgvLicenseTestAppointments.Columns[2].Width = 280;
 
                 dgvLicenseTestAppointments.Columns[3].HeaderText = "Is Locked";
-                dgvLicenseTestAppointments.Columns[3].Width = 100;
+                dgvLicenseTestAppointments.Columns[3].Width = 120;
             }
 
         }
