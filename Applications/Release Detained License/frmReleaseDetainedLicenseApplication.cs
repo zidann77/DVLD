@@ -64,8 +64,9 @@ namespace DVLDProject.Applications.Release_Detained_License
             lblDetainDate.Text = ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.DetainedInfo.DetainDate.ToString();
             lblDetainID.Text = ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.DetainedInfo.DetainID.ToString();
             lblFineFees.Text = ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.DetainedInfo.FineFees.ToString();
-            float TotalFees = Convert.ToSingle(lblFineFees.Text);
-            TotalFees += Convert.ToSingle(lblApplicationFees.Text);
+            float TotalFees = Convert.ToSingle(lblFineFees.Text.ToString());
+            // TotalFees += Convert.ToSingle(lblApplicationFees.Text.ToString());
+            TotalFees += clsApplicationType.Find((int)clsApplication.enApplicationType.ReleaseDetainedDrivingLicsense).Fees;
             lblTotalFees.Text = TotalFees.ToString();
             llShowLicenseHistory.Enabled= true;
             btnRelease.Enabled = true;
