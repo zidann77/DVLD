@@ -137,7 +137,7 @@ namespace DVLDProject.Applications.InternationalLicense
 
         private void llShowLicenseInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmShowInternationalLicenseInfo frm = new frmShowInternationalLicenseInfo(ctrlDriverLicenseInfoWithFilter1.LicenseID);
+            frmShowInternationalLicenseInfo frm = new frmShowInternationalLicenseInfo(_InternationalLicenseID);
             frm.ShowDialog();
         }
     }

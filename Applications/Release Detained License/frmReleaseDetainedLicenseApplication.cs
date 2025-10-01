@@ -59,7 +59,7 @@ namespace DVLDProject.Applications.Release_Detained_License
                 return;
             }
             
-           llShowLicenseHistory.Visible = true; 
+          
           
             lblDetainDate.Text = ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.DetainedInfo.DetainDate.ToString();
             lblDetainID.Text = ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.DetainedInfo.DetainID.ToString();
@@ -67,7 +67,7 @@ namespace DVLDProject.Applications.Release_Detained_License
             float TotalFees = Convert.ToSingle(lblFineFees.Text);
             TotalFees += Convert.ToSingle(lblApplicationFees.Text);
             lblTotalFees.Text = TotalFees.ToString();
-
+            llShowLicenseHistory.Enabled= true;
             btnRelease.Enabled = true;
             btnRelease.Focus();
 

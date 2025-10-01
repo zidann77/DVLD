@@ -128,6 +128,8 @@ namespace DVLDProject.UserFolder
                   "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
+            this.Close();
         }
     }
 }
