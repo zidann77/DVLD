@@ -127,6 +127,7 @@ namespace DVLDProject.Tests.ManageTest
 
         private void takeTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             int TestAppointmentID = (int)dgvLicenseTestAppointments.CurrentRow.Cells[0].Value;
 
             frmTakeTest frm = new frmTakeTest(TestAppointmentID, _TestType);
@@ -151,13 +152,13 @@ namespace DVLDProject.Tests.ManageTest
             if ((bool)dgvLicenseTestAppointments.CurrentRow.Cells[3].Value)
             {
                 editToolStripMenuItem.Enabled = false;
-                takeTestToolStripMenuItem.Enabled = false;
+             //   takeTestToolStripMenuItem.Enabled = false;
             }
 
             else
             {
                 editToolStripMenuItem.Enabled = true;
-                takeTestToolStripMenuItem.Enabled = true;
+             //   takeTestToolStripMenuItem.Enabled = true;
             }
         }
     }

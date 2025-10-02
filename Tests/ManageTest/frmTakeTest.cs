@@ -13,7 +13,7 @@ namespace DVLDProject.Tests.ManageTest
 {
     public partial class frmTakeTest : Form
     {
-        int TestAppointment = -1;
+        int TestAppointmentID = -1;
 
         clsTestType.enTestType TestType;
 
@@ -25,15 +25,16 @@ namespace DVLDProject.Tests.ManageTest
         public frmTakeTest(int AppID , clsTestType.enTestType Type)
         {
             InitializeComponent();
-            TestAppointment = AppID;
+            TestAppointmentID = AppID;
             TestType = Type;
+
         }
 
         private void frmTakeTest_Load(object sender, EventArgs e)
         {
            
             ctrlScheduledTest1.TestTypeID = TestType;
-            ctrlScheduledTest1.LoadInfo(TestAppointment);
+            ctrlScheduledTest1.LoadInfo(TestAppointmentID);
 
             if (ctrlScheduledTest1.TestAppointmentID == -1)
                 btnSave.Enabled = false;
@@ -43,7 +44,7 @@ namespace DVLDProject.Tests.ManageTest
             int TestID = ctrlScheduledTest1.TestID;
 
             if (TestID != -1)
-            { 
+            {
 
                 _Test = clsTest.Find(TestID);
 
@@ -57,11 +58,22 @@ namespace DVLDProject.Tests.ManageTest
                 lblUserMessage.Visible = true;
                 rbFail.Enabled = false;
                 rbPass.Enabled = false;
-
+                btnSave.Enabled = false;
             }
 
             else
             {
+                DateTime appointmentDate = clsTestAppointment.Find(TestAppointmentID).AppointmentDate;
+                if (appointmentDate < DateTime.Now)
+                {
+
+                    MessageBox.Show($"The test appointment scheduled for {appointmentDate:MMM dd, yyyy} at {appointmentDate:hh:mm tt} has been missed. Please reschedule.",
+                                   "Missed Appointment",
+                                   MessageBoxButtons.OK,
+                                   MessageBoxIcon.Exclamation);
+                    clsTestAppointment.Find(TestAppointmentID).IsLocked = true;
+                    this.Close();
+                }
                 _Test = new clsTest();
                 btnSave.Enabled = true;
             }

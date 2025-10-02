@@ -17,6 +17,7 @@ namespace DVLDProject.Tests.ManageTest
         {
             InitializeComponent();
             ctrlScheduleTest1.TestTypeID = Type;
+
             ctrlScheduleTest1.LoadInfo(LocalAppID, TestAppointemnet);
         }
 

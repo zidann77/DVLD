@@ -68,13 +68,15 @@ namespace DVLDProject.Tests.Controls
 
         clsLocalDrivingLicenseApplication LApp;
 
+        
+
         public void LoadInfo(int ID)
         {
             _TestAppointmentID = ID;
 
-          clsTestAppointment appointment = clsTestAppointment.Find(TestAppointmentID);    
+            clsTestAppointment Appointment = clsTestAppointment.Find(TestAppointmentID);    
 
-            if(appointment == null)
+            if(Appointment == null)
             {
                 MessageBox.Show("Error: No  Appointment ID = " + _TestAppointmentID.ToString(),
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -83,7 +85,7 @@ namespace DVLDProject.Tests.Controls
             }
 
 
-            int Lid = appointment.LocalDrivingLicenseApplicationID;
+            int Lid = Appointment.LocalDrivingLicenseApplicationID;
              LApp = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(Lid);
 
             if (LApp == null)
@@ -92,7 +94,7 @@ namespace DVLDProject.Tests.Controls
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); 
                 return;
             }
-            _TestID = appointment.TestID;
+            _TestID = Appointment.TestID;
 
             lblLocalDrivingLicenseAppID.Text = LApp.LocalDrivingLicenseApplicationID.ToString();
             lblDrivingClass.Text = LApp.LicenseClassInfo.ClassName;
@@ -102,8 +104,8 @@ namespace DVLDProject.Tests.Controls
             lblTrial.Text = LApp.TotalTrialsPerTest(TestTypeID).ToString();
 
 
-            lblDate.Text = clsFormat.DateToShort(appointment.AppointmentDate);
-            lblFees.Text = appointment.PaidFees.ToString();
+            lblDate.Text = clsFormat.DateToShort(Appointment.AppointmentDate);
+            lblFees.Text = Appointment.PaidFees.ToString();
 
             lblTestID.Text = _TestID.HasValue ? _TestID.Value.ToString() : "Not Taken Yet";
 
