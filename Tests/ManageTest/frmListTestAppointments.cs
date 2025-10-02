@@ -52,7 +52,7 @@ namespace DVLDProject.Tests.ManageTest
             else
             {
                 ScheduleTest frm2 = new ScheduleTest
-                (LastTest.TestAppointmentInfo.LocalDrivingLicenseApplicationID, _TestType);
+                (LastTest.TestAppointmentInfo.LocalDrivingLicenseApplicationID, _TestType, LastTest.TestAppointmentID);
                 frm2.ShowDialog();
             }
 
