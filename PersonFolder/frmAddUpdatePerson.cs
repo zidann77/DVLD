@@ -395,6 +395,8 @@ namespace DVLDProject.PersonFolder
                 e.Cancel = true;
                 errorProvider1.SetError(EamilBox, "Invalid Email Address Format!");
             }
+            else
+                errorProvider1.SetError(EamilBox, null);
         }
 
 

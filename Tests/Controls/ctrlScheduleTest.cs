@@ -148,13 +148,12 @@ namespace DVLDProject.Tests.Controls
 
         void SetRetakeInfo()
         {
-            if (_TestAppointment.RetakeTestApplicationID != -1)
-            {
+
                 gbRetakeTestInfo.Enabled = true;
                 lblRetakeAppFees.Text = clsApplicationType.Find((int)clsApplication.enApplicationType.RetakeTest).Fees.ToString();
                 lblRetakeTestAppID.Text = _TestAppointment.RetakeTestApplicationID.ToString();
                 lblTotalFees.Text = (Convert.ToSingle(lblFees.Text) + Convert.ToSingle(lblRetakeAppFees.Text)).ToString();
-            }
+            
         }
 
         bool CreateRetakeApplication()

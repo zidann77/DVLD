@@ -32,16 +32,17 @@ namespace DVLDProject.Tests.ManageTest
 
         private void frmTakeTest_Load(object sender, EventArgs e)
         {
-           
+
             ctrlScheduledTest1.TestTypeID = TestType;
             ctrlScheduledTest1.LoadInfo(TestAppointmentID);
 
-            if (ctrlScheduledTest1.TestAppointmentID == -1)
-                btnSave.Enabled = false;
-            else
-                btnSave.Enabled = true;
+          
 
             int TestID = ctrlScheduledTest1.TestID;
+
+            rbFail.Enabled = false;
+            rbPass.Enabled = false;
+            btnSave.Enabled = false;
 
             if (TestID != -1)
             {
@@ -56,11 +57,8 @@ namespace DVLDProject.Tests.ManageTest
                 txtNotes.Text = _Test.Notes;
                 txtNotes.Enabled = false;
                 lblUserMessage.Visible = true;
-                rbFail.Enabled = false;
-                rbPass.Enabled = false;
-                btnSave.Enabled = false;
-            }
 
+            }
             else
             {
                 DateTime appointmentDate = clsTestAppointment.Find(TestAppointmentID).AppointmentDate;
@@ -71,13 +69,23 @@ namespace DVLDProject.Tests.ManageTest
                                    "Missed Appointment",
                                    MessageBoxButtons.OK,
                                    MessageBoxIcon.Exclamation);
-                    clsTestAppointment.Find(TestAppointmentID).IsLocked = true;
-                    this.Close();
+                    
+                    clsTestAppointment test = clsTestAppointment.Find(TestAppointmentID);
+                    test.IsLocked = true;
+                    test.Save();
+
                 }
-                _Test = new clsTest();
-                btnSave.Enabled = true;
+                else
+                {
+
+                    _Test = new clsTest();
+                    btnSave.Enabled = true;
+                    rbFail.Enabled = true;
+                    rbPass.Enabled = true;
+
+                }
             }
-        } 
+        }
         
          
         private void btnSave_Click(object sender, EventArgs e)
