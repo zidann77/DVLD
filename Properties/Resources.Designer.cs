@@ -493,6 +493,16 @@ namespace DVLDProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap resume_942748__1_ {
+            get {
+                object obj = ResourceManager.GetObject("resume_942748 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Retake_Test_32 {
             get {
                 object obj = ResourceManager.GetObject("Retake Test 32", resourceCulture);

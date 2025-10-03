@@ -153,13 +153,22 @@ namespace DVLDProject.Tests.ManageTest
             {
                 editToolStripMenuItem.Enabled = false;
                takeTestToolStripMenuItem.Enabled = false;
+                showResultToolStripMenuItem.Enabled = true;
             }
 
             else
             {
                 editToolStripMenuItem.Enabled = true;
                 takeTestToolStripMenuItem.Enabled = true;
+                showResultToolStripMenuItem.Enabled = false;
             }
+        }
+
+        private void showResultToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShowResult frm = new frmShowResult((int)dgvLicenseTestAppointments.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+
         }
     }
 }

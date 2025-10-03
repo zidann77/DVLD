@@ -42,19 +42,19 @@ namespace DVLDProject.Tests.Controls
                     case enmode.pass:
                         pbResult.Image = Resources.test__1_;
                         lbresult.Text = "Passed";
-                        lbresult.BackColor = Color.Green;
+                        lbresult.ForeColor = Color.Green;
                         break;
 
                     case enmode.failed:
                         pbResult.Image = Resources.test;
                         lbresult.Text = "Failed";
-                        lbresult.BackColor = Color.Red;
+                        lbresult.ForeColor = Color.Red;
                         break;
 
                     case enmode.absent:
                         pbResult.Image = Resources.absent;
                         lbresult.Text = "Absent";
-                        lbresult.BackColor = Color.Blue;
+                        lbresult.ForeColor = Color.Blue;
                         break;
                 }
             }
@@ -68,7 +68,8 @@ namespace DVLDProject.Tests.Controls
 
         void LoadInfo(clsTestAppointment appointment)
         {
-            clsPerson Person = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(appointment.LocalDrivingLicenseApplicationID).Applicant;
+            int pID = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(appointment.LocalDrivingLicenseApplicationID).ApplicantPersonID;
+            clsPerson Person = clsPerson.Find(pID);
             if (Person == null)
                 return;
             lblFullName.Text = Person.FullName;
@@ -98,6 +99,7 @@ namespace DVLDProject.Tests.Controls
         public void LoadResult(int TestAppID)
         {
             clsTestAppointment Appointment = clsTestAppointment.Find(TestAppID);
+
 
             if (Appointment != null)
             {
