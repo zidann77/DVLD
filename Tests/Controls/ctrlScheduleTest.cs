@@ -69,7 +69,7 @@ namespace DVLDProject.Tests.Controls
         {
             dtpTestDate.MinDate = DateTime.Now;
             gbRetakeTestInfo.Enabled = false;
-            lblFees.Text = clsTestType.Find(_TestTypeID).Fees.ToString();       
+            lblFees.Text = clsTestType.Find(_TestTypeID).Fees.ToString();
 
             lblFees.Text = clsTestType.Find(_TestTypeID).Fees.ToString();
             btnSave.Enabled = true;
@@ -88,18 +88,26 @@ namespace DVLDProject.Tests.Controls
                 btnSave.Enabled = false;
             }
 
-          
+
             if (appointmentID != -1)
             {
                 _TestAppointmentID = appointmentID;
                 _TestAppointment = clsTestAppointment.Find(_TestAppointmentID);
 
-                if (_TestAppointment != null &&( _TestAppointment.AppointmentDate >= DateTime.Now))
+
+                if (_TestAppointment.AppointmentDate < DateTime.Now)
+                {
+                    _TestAppointment.IsLocked = true;
+                    _TestAppointment.Save();
+                }
+
+
+                if (_TestAppointment != null && (!_TestAppointment.IsLocked))
                 {
                     CurrentMode = enMode.Update;
                 }
 
-                else if (_TestAppointment != null && _TestAppointment.AppointmentDate < DateTime.Now)
+                else if (_TestAppointment != null && _TestAppointment.IsLocked)
                 {
                     MessageBox.Show("The applicant has a previous appointment that is already due or has passed.",
                                     "Past Appointment",
@@ -111,7 +119,7 @@ namespace DVLDProject.Tests.Controls
                                     MessageBoxIcon.Information);
 
                     _TestAppointment.IsLocked = true;
-                    _TestAppointment.Save();    
+                    _TestAppointment.Save();
 
                     CurrentMode = enMode.RetakeTest;
                     SetRetakeInfo();
@@ -133,16 +141,16 @@ namespace DVLDProject.Tests.Controls
             }
 
             // Check if applicant already attended this test
-            
 
-           
 
-           
+
+
+
             lblLocalDrivingLicenseAppID.Text = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID.ToString();
             lblDrivingClass.Text = _LocalDrivingLicenseApplication.LicenseClassInfo.ClassName;
             lblFullName.Text = _LocalDrivingLicenseApplication.PersonFullName;
             lblTrial.Text = _LocalDrivingLicenseApplication.TotalTrialsPerTest(_TestTypeID).ToString();
-            
+
             dtpTestDate.MinDate = DateTime.Now;
         }
 
