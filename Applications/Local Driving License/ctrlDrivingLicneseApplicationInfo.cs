@@ -32,6 +32,8 @@ namespace DVLDProject.Applications.Local_Driving_License
             InitializeComponent();
         }
 
+      
+
         void FillInfo()
         {
             ctrlApplicationBasicInfo1.LoadData(_Application.ApplicationID);
@@ -42,6 +44,8 @@ namespace DVLDProject.Applications.Local_Driving_License
 
             lblLocalDrivingLicenseApplicationID.Text = _Application.ApplicationID.ToString();
             lblAppliedFor.Text = clsLicenseClass.Find(_Application.LicenseClassID).ClassName;
+
+            lblPassedTests.Text = clsLocalDrivingLicenseApplication.GetPassedTestCount(_Application.LocalDrivingLicenseApplicationID).ToString();
      
         }
 

@@ -58,6 +58,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.testResult1);
             this.Name = "frmShowResult";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmShowResult";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -139,6 +139,9 @@ namespace DVLDProject.Tests.ManageTest
                 dgvLicenseTestAppointments.Columns[3].Width = 120;
             }
 
+            //refresh
+
+            ctrlDrivingLicneseApplicationInfo1.LoadData( _LocalDrivingLicenseApplicationID);
         }
 
         private void frmListTestAppointments_Load(object sender, EventArgs e)
@@ -190,6 +193,11 @@ namespace DVLDProject.Tests.ManageTest
         {
             frmShowResult frm = new frmShowResult((int)dgvLicenseTestAppointments.CurrentRow.Cells[0].Value);
             frm.ShowDialog();
+
+        }
+
+        private void ctrlDrivingLicneseApplicationInfo1_Load(object sender, EventArgs e)
+        {
 
         }
     }

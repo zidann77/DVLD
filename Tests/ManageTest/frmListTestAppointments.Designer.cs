@@ -36,11 +36,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dgvLicenseTestAppointments = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btnAddNewAppointment = new System.Windows.Forms.Button();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.takeTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pbTestTypeImage = new System.Windows.Forms.PictureBox();
             this.showResultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddNewAppointment = new System.Windows.Forms.Button();
+            this.pbTestTypeImage = new System.Windows.Forms.PictureBox();
             this.ctrlDrivingLicneseApplicationInfo1 = new DVLDProject.Applications.Local_Driving_License.ctrlDrivingLicneseApplicationInfo();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLicenseTestAppointments)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -126,17 +126,6 @@
             this.contextMenuStrip1.Size = new System.Drawing.Size(155, 118);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
-            // btnAddNewAppointment
-            // 
-            this.btnAddNewAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNewAppointment.Image = global::DVLDProject.Properties.Resources.icons8_add_48;
-            this.btnAddNewAppointment.Location = new System.Drawing.Point(838, 490);
-            this.btnAddNewAppointment.Name = "btnAddNewAppointment";
-            this.btnAddNewAppointment.Size = new System.Drawing.Size(55, 52);
-            this.btnAddNewAppointment.TabIndex = 141;
-            this.btnAddNewAppointment.UseVisualStyleBackColor = true;
-            this.btnAddNewAppointment.Click += new System.EventHandler(this.btnAddNewAppointment_Click);
-            // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Image = global::DVLDProject.Properties.Resources.edit_32;
@@ -155,6 +144,26 @@
             this.takeTestToolStripMenuItem.Text = "Take Test";
             this.takeTestToolStripMenuItem.Click += new System.EventHandler(this.takeTestToolStripMenuItem_Click);
             // 
+            // showResultToolStripMenuItem
+            // 
+            this.showResultToolStripMenuItem.Image = global::DVLDProject.Properties.Resources.resume_942748__1_;
+            this.showResultToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showResultToolStripMenuItem.Name = "showResultToolStripMenuItem";
+            this.showResultToolStripMenuItem.Size = new System.Drawing.Size(154, 38);
+            this.showResultToolStripMenuItem.Text = "Show Result";
+            this.showResultToolStripMenuItem.Click += new System.EventHandler(this.showResultToolStripMenuItem_Click);
+            // 
+            // btnAddNewAppointment
+            // 
+            this.btnAddNewAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewAppointment.Image = global::DVLDProject.Properties.Resources.icons8_add_48;
+            this.btnAddNewAppointment.Location = new System.Drawing.Point(838, 490);
+            this.btnAddNewAppointment.Name = "btnAddNewAppointment";
+            this.btnAddNewAppointment.Size = new System.Drawing.Size(55, 52);
+            this.btnAddNewAppointment.TabIndex = 141;
+            this.btnAddNewAppointment.UseVisualStyleBackColor = true;
+            this.btnAddNewAppointment.Click += new System.EventHandler(this.btnAddNewAppointment_Click);
+            // 
             // pbTestTypeImage
             // 
             this.pbTestTypeImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -168,21 +177,13 @@
             this.pbTestTypeImage.TabIndex = 134;
             this.pbTestTypeImage.TabStop = false;
             // 
-            // showResultToolStripMenuItem
-            // 
-            this.showResultToolStripMenuItem.Image = global::DVLDProject.Properties.Resources.resume_942748__1_;
-            this.showResultToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showResultToolStripMenuItem.Name = "showResultToolStripMenuItem";
-            this.showResultToolStripMenuItem.Size = new System.Drawing.Size(154, 38);
-            this.showResultToolStripMenuItem.Text = "Show Result";
-            this.showResultToolStripMenuItem.Click += new System.EventHandler(this.showResultToolStripMenuItem_Click);
-            // 
             // ctrlDrivingLicneseApplicationInfo1
             // 
             this.ctrlDrivingLicneseApplicationInfo1.Location = new System.Drawing.Point(8, 129);
             this.ctrlDrivingLicneseApplicationInfo1.Name = "ctrlDrivingLicneseApplicationInfo1";
             this.ctrlDrivingLicneseApplicationInfo1.Size = new System.Drawing.Size(892, 363);
             this.ctrlDrivingLicneseApplicationInfo1.TabIndex = 136;
+            this.ctrlDrivingLicneseApplicationInfo1.Load += new System.EventHandler(this.ctrlDrivingLicneseApplicationInfo1_Load);
             // 
             // frmListTestAppointments
             // 
