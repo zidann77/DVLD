@@ -68,12 +68,12 @@
             // 
             this.lbresult.AutoSize = true;
             this.lbresult.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbresult.ForeColor = System.Drawing.Color.Green;
-            this.lbresult.Location = new System.Drawing.Point(371, 416);
+            this.lbresult.ForeColor = System.Drawing.Color.Blue;
+            this.lbresult.Location = new System.Drawing.Point(378, 416);
             this.lbresult.Name = "lbresult";
-            this.lbresult.Size = new System.Drawing.Size(131, 39);
+            this.lbresult.Size = new System.Drawing.Size(123, 39);
             this.lbresult.TabIndex = 1;
-            this.lbresult.Text = "Passed";
+            this.lbresult.Text = "Absent";
             // 
             // lblLocalDrivingLicenseAppID
             // 
@@ -283,7 +283,7 @@
             // 
             // pbResult
             // 
-            this.pbResult.Image = global::DVLDProject.Properties.Resources.test;
+            this.pbResult.Image = global::DVLDProject.Properties.Resources.absent;
             this.pbResult.Location = new System.Drawing.Point(358, 259);
             this.pbResult.Name = "pbResult";
             this.pbResult.Size = new System.Drawing.Size(158, 154);

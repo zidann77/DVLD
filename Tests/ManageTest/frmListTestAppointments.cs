@@ -36,25 +36,47 @@ namespace DVLDProject.Tests.ManageTest
                 return;
             }
 
-            clsTest LastTest = localDrivingLicenseApplication.GetLastTestPerTestType(_TestType);
-
-            if (LastTest == null)
-            {
-                ScheduleTest frm1 = new ScheduleTest(_LocalDrivingLicenseApplicationID, _TestType);
-                frm1.ShowDialog();
-            }
-            else if (LastTest.TestResult)
+            else if(localDrivingLicenseApplication.DoesPassTestType(_TestType))
             {
                 MessageBox.Show("This person already passed this test before, you can only retake faild test", "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
+
+            //clsTest LastTest = localDrivingLicenseApplication.GetLastTestPerTestType(_TestType);
+
+            //if (LastTest == null)
+            //{
+            //    ScheduleTest frm1 = new ScheduleTest(_LocalDrivingLicenseApplicationID, _TestType);
+            //    frm1.ShowDialog();
+            //}
+            //else if (LastTest.TestResult)
+            //{
+            //    MessageBox.Show("This person already passed this test before, you can only retake faild test", "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
+
+            //else
+            //{
+            //    ScheduleTest frm2 = new ScheduleTest
+            //    (LastTest.TestAppointmentInfo.LocalDrivingLicenseApplicationID, _TestType, LastTest.TestAppointmentID);
+            //    frm2.ShowDialog();
+            //}
+
+            clsTestAppointment lastAppointment = clsTestAppointment.GetLastTestAppointment(localDrivingLicenseApplication.LocalDrivingLicenseApplicationID, _TestType);
+
+            if (lastAppointment == null)
+            {
+                ScheduleTest frm1 = new ScheduleTest(_LocalDrivingLicenseApplicationID, _TestType);
+                frm1.ShowDialog();
+            }
+
             else
             {
-                ScheduleTest frm2 = new ScheduleTest
-                (LastTest.TestAppointmentInfo.LocalDrivingLicenseApplicationID, _TestType, LastTest.TestAppointmentID);
-                frm2.ShowDialog();
+                ScheduleTest frm1 = new ScheduleTest(localDrivingLicenseApplication.LocalDrivingLicenseApplicationID, _TestType, lastAppointment.TestAppointmentID);
+                frm1.ShowDialog();
             }
+
 
             RefreshData();
         }
@@ -127,7 +149,7 @@ namespace DVLDProject.Tests.ManageTest
 
         private void takeTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
             int TestAppointmentID = (int)dgvLicenseTestAppointments.CurrentRow.Cells[0].Value;
 
             frmTakeTest frm = new frmTakeTest(TestAppointmentID, _TestType);
@@ -152,7 +174,7 @@ namespace DVLDProject.Tests.ManageTest
             if ((bool)dgvLicenseTestAppointments.CurrentRow.Cells[3].Value)
             {
                 editToolStripMenuItem.Enabled = false;
-               takeTestToolStripMenuItem.Enabled = false;
+                takeTestToolStripMenuItem.Enabled = false;
                 showResultToolStripMenuItem.Enabled = true;
             }
 

@@ -122,13 +122,14 @@ namespace DVLDProject.Tests.Controls
                     }
 
                     LoadInfo(Appointment);
-
+                  
                 }
 
                 else
                 {
                     MessageBox.Show("No test found.", "Missing Test",
         MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                   
                 }
             }
 
@@ -138,6 +139,7 @@ namespace DVLDProject.Tests.Controls
         MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
+            
 
         }
     }

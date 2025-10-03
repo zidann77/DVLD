@@ -189,6 +189,7 @@ namespace DVLDProject.Tests.Controls
 
             _TestAppointment.TestTypeID = _TestTypeID;
             _TestAppointment.LocalDrivingLicenseApplicationID = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID;
+          //  _TestAppointment.AppointmentDate = dtpTestDate.Value.AddHours(6);
             _TestAppointment.AppointmentDate = dtpTestDate.Value;
             _TestAppointment.PaidFees = Convert.ToSingle(lblFees.Text.ToString());
             _TestAppointment.CreatedByUserID = clsGlobal.CurrentUser.id;

@@ -17,6 +17,7 @@ namespace DVLDProject.Tests.ManageTest
             InitializeComponent();
 
             testResult1.LoadResult(AppiontmentID);
+
         }
     }
 }
