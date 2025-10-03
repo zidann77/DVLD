@@ -105,6 +105,11 @@ namespace DVLDProject.Tests.Controls
                 if (_TestAppointment != null && (!_TestAppointment.IsLocked))
                 {
                     CurrentMode = enMode.Update;
+
+                    if(_TestAppointment.RetakeTestAppInfo != null)
+                    {
+                        SetRetakeInfo();
+                    }
                 }
 
                 else if (_TestAppointment != null && _TestAppointment.IsLocked)

@@ -55,7 +55,7 @@ namespace DVLDProject.Applications.ReplaceLostOrDamagedLicense
             }
 
             btnIssueReplacement.Enabled = true;
-
+            llShowLicenseHistory.Enabled = true;
         }
 
         private enIssueReason _GetIssueReason()

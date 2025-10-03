@@ -24,6 +24,15 @@ namespace DVLDProject.Applications.InternationalLicense
             InitializeComponent();
         }
 
+        public frmNewInternationalLicense(int ID)
+        {
+            InitializeComponent();
+            _InternationalLicenseID = ID;
+            ctrlDriverLicenseInfoWithFilter1.LoadLicenseInfo(_InternationalLicenseID);
+        }
+
+
+
 
         private void gpApplicationInfo_Enter(object sender, EventArgs e)
         {
