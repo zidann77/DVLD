@@ -173,7 +173,7 @@
             this.lbTitle.AutoSize = true;
             this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.Firebrick;
-            this.lbTitle.Location = new System.Drawing.Point(406, 9);
+            this.lbTitle.Location = new System.Drawing.Point(383, 9);
             this.lbTitle.Name = "lbTitle";
             this.lbTitle.Size = new System.Drawing.Size(273, 39);
             this.lbTitle.TabIndex = 9;
@@ -451,7 +451,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(136, 33);
+            this.label14.Location = new System.Drawing.Point(116, 33);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(23, 25);
             this.label14.TabIndex = 11;
