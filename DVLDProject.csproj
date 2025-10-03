@@ -274,6 +274,12 @@
     <Compile Include="Tests\ManageTest\frmListTestAppointments.Designer.cs">
       <DependentUpon>frmListTestAppointments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tests\ManageTest\frmShowResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\ManageTest\frmShowResult.Designer.cs">
+      <DependentUpon>frmShowResult.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tests\ManageTest\frmTakeTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -436,6 +442,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\ManageTest\frmListTestAppointments.resx">
       <DependentUpon>frmListTestAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\ManageTest\frmShowResult.resx">
+      <DependentUpon>frmShowResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\ManageTest\frmTakeTest.resx">
       <DependentUpon>frmTakeTest.cs</DependentUpon>
@@ -626,6 +635,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Test 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-fail-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pass-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\absent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
