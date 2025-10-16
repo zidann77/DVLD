@@ -104,6 +104,7 @@ namespace DVLDProject.Licenses.Detain_license
 
         private void cbFilterBy_SelectedIndexChanged(object sender, EventArgs e)
         {
+           
             if (cbFilterBy.Text == "Is Released")
             {
                 txtFilterValue.Visible = false;
@@ -204,13 +205,6 @@ namespace DVLDProject.Licenses.Detain_license
                     break;
             }
 
-            if (!_dtDetainedLicenses.Columns.Contains(FilterColumn))
-            {
-                MessageBox.Show($"Column '{FilterColumn}' does not exist in the data.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Exit the method early if the column is missing
-            }
-
-
 
             //Reset the filters in case nothing selected or filter value conains nothing.
             if (txtFilterValue.Text.Trim() == "" || FilterColumn == "None")
@@ -219,6 +213,13 @@ namespace DVLDProject.Licenses.Detain_license
                 lblTotalRecords.Text = dgvDetainedLicenses.Rows.Count.ToString();
                 return;
             }
+
+            if (!_dtDetainedLicenses.Columns.Contains(FilterColumn))
+            {
+                MessageBox.Show($"Column '{FilterColumn}' does not exist in the data.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Exit the method early if the column is missing
+            }
+
 
 
             if (FilterColumn == "DetainID" || FilterColumn == "ReleaseApplicationID")

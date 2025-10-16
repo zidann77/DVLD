@@ -27,8 +27,7 @@ namespace DVLDProject.Applications.InternationalLicense
         public frmNewInternationalLicense(int ID)
         {
             InitializeComponent();
-            _InternationalLicenseID = ID;
-            ctrlDriverLicenseInfoWithFilter1.LoadLicenseInfo(_InternationalLicenseID);
+            
         }
 
 

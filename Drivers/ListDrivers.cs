@@ -128,6 +128,7 @@ namespace DVLDProject.Drivers
         private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int PersonID = (int)dgvDrivers.CurrentRow.Cells[1].Value;
+   
             frmShowPersonDetails frm = new frmShowPersonDetails(PersonID);
             frm.ShowDialog();
 
@@ -139,8 +140,8 @@ namespace DVLDProject.Drivers
 
         private void issueInternationalLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
-          frmNewInternationalLicense frm = new frmNewInternationalLicense();
+
+            frmNewInternationalLicense frm = new frmNewInternationalLicense();
             frm.ShowDialog();
         }
 
