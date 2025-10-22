@@ -557,6 +557,11 @@ namespace DVLDProject.PersonFolder
             else
                 errorProvider1.SetError(comboBox1, null);
         }
+
+        private void rbMale_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

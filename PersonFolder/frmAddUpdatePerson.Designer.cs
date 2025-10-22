@@ -358,6 +358,7 @@
             this.rbMale.Tag = "0";
             this.rbMale.Text = "Male";
             this.rbMale.UseVisualStyleBackColor = true;
+            this.rbMale.CheckedChanged += new System.EventHandler(this.rbMale_CheckedChanged);
             this.rbMale.Click += new System.EventHandler(this.rbMale_Click);
             // 
             // textBox5
