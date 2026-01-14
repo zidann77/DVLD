@@ -32,5 +32,10 @@ namespace DVLDProject.PersonFolder
         {
             DataBack?.Invoke(this, personCardWithFilter1.PersonID);
         }
+
+        private void Find_Person_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

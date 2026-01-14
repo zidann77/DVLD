@@ -76,6 +76,7 @@
             this.Controls.Add(this.personCardWithFilter1);
             this.Name = "Find_Person";
             this.Text = "Find_Person";
+            this.Load += new System.EventHandler(this.Find_Person_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
