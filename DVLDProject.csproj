@@ -481,12 +481,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BusinessLogic_DVLD\BusinessLogic_DVLD.csproj">
-      <Project>{75f3d6d3-a66b-4101-b8eb-32322812b0de}</Project>
-      <Name>BusinessLogic_DVLD</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Female 512.png" />
   </ItemGroup>
   <ItemGroup>
@@ -656,6 +650,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\driving-license %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Business Logic Layer\BusinessLogic_DVLD.csproj">
+      <Project>{75f3d6d3-a66b-4101-b8eb-32322812b0de}</Project>
+      <Name>BusinessLogic_DVLD</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
